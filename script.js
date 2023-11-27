@@ -6,6 +6,7 @@ const alfabetoUpper = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","
 const alfabetoLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 function Crypt(){
+    Clear();
     var rot = document.getElementById("RotChoice").value;
     var message = document.getElementById("EncryptInput").value.split('');
     var resposta = document.getElementById("DecryptInput");
@@ -26,8 +27,6 @@ function Crypt(){
 }
 
 function Clear(){
-    var message = document.getElementById("EncryptInput");
     var resposta = document.getElementById("DecryptInput");
-    message.value = "";
     resposta.value = "";
 }
