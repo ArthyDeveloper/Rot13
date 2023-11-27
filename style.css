@@ -1,0 +1,126 @@
+/*Oswald*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: 'Oswald', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    overflow: hidden;
+}
+
+p{
+    user-select: none;
+}
+
+textarea{
+    z-index: 5;
+    resize: none;
+    border-radius: 5px;
+    position: absolute;
+    width: 350px;
+    height: 150px;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    text-justify: auto;
+}
+
+select{
+    z-index: 5;
+    padding: 5px;
+    outline: none;
+    width: 59px;
+}
+option{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+button{
+    z-index: 1;
+    padding: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: whitesmoke;
+}
+
+#OptionsDiv{
+    z-index: 6;
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 187px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+#BotõesDiv{
+    width: max-content;
+}
+
+#Box{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: dimgray;
+}
+
+#TitleDiv{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: max-content;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+#EncryptInput{
+    left: 50%;
+    top: 320px;
+    transform: translate(-50%, -90%);
+}
+
+#DecryptInput{
+    left: 50%;
+    top: 580px;
+    transform: translate(-50%, -90%);
+}
+
+@media (max-width: 390px){
+    textarea{
+        width: 270px;
+    }
+
+    #TitleDiv{
+        top: 20px;
+    }
+    
+    #EncryptInput{
+        top: 300px;
+    }
+
+    #DecryptInput{
+        top: 520px;
+    }
+
+    #OptionsDiv{
+        top: 340px;
+    }
+}
