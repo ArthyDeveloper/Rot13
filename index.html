@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rot13</title>
+</head>
+<body>
+    <container id="Box">
+        <div id="TitleDiv">
+            <p id="TitleP1">ROT13</p>
+            <p id="TitleP2">Crypt & Decrypt</p>
+        </div>
+        <textarea id="EncryptInput" placeholder="Type here" spellcheck="false" ></textarea>
+        <textarea id="DecryptInput" readonly placeholder="And the results will come here" ></textarea>
+        <div id="OptionsDiv">
+            <select id="RotChoice" onfocus="this.size=5" onblur="this.size=1" onchange='this.size=1; this.blur();'>
+                <option value="1">Rot1</option>
+                <option value="2">Rot2</option>
+                <option value="3">Rot3</option>
+                <option value="4">Rot4</option>
+                <option value="5">Rot5</option>
+                <option value="6">Rot6</option>
+                <option value="7">Rot7</option>
+                <option value="8">Rot8</option>
+                <option value="9">Rot9</option>
+                <option value="10">Rot10</option>
+                <option value="11">Rot11</option>
+                <option value="12">Rot12</option>
+                <option value="13" selected="">Rot13</option>
+                <option value="14">Rot14</option>
+                <option value="15">Rot15</option>
+                <option value="16">Rot16</option>
+                <option value="17">Rot17</option>
+                <option value="18">Rot18</option>
+                <option value="19">Rot19</option>
+                <option value="20">Rot20</option>
+                <option value="21">Rot21</option>
+                <option value="22">Rot22</option>
+                <option value="23">Rot23</option>
+                <option value="24">Rot24</option>
+                <option value="25">Rot25</option>
+            </select>
+            <div id="BotõesDiv">
+                <button id="CryptBtn" onclick="Crypt()">Crypt / Decrypt</button>
+                <button id="ClearBtn" onclick="Clear()">Clear</button>
+            </div>
+        </div>
+
+    </container>
+</body>
+<script src="./script.js"></script>
+</html>
